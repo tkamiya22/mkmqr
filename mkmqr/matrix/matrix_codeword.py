@@ -138,7 +138,7 @@ def place_codeword(version: Version, codeword: BinaryArray) -> BinaryMatrix:
 
     :param version: 型番
     :param codeword: コード語列
-    :return:
+    :return: コード語列を配置した行列
     """
     n = version.size
     if len(codeword) != (n-1)**2 - 8**2:
@@ -147,7 +147,7 @@ def place_codeword(version: Version, codeword: BinaryArray) -> BinaryMatrix:
     def cursor():
         """
         ビットを配置する座標(i,j)を順に返す
-        原点は左上、iは下方向、jは右方向
+        原点は左上、iは下方向、jは右方向を表す
         """
         for idx, j in enumerate(range(n-1, 0, -2)):
             rng = range(9, n) if j <= 8 else range(1, n)  # j<=8のときは切り出しパターンを避けなければならない

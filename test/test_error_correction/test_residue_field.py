@@ -1,5 +1,5 @@
 import unittest
-from micro_qr.error_correction import PolynomialRing, ResidueFieldOperator
+from mkmqr.error_correction import PolynomialRing, ResidueFieldOperator
 
 
 class TestResidueField(unittest.TestCase):

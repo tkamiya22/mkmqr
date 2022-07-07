@@ -1,6 +1,6 @@
 from enum import Enum
 
-from micro_qr.binary import bin2arr, BinaryArray
+from mkmqr.binary import bin2arr, BinaryArray
 
 
 class Version(Enum):

@@ -64,7 +64,7 @@ def symbol_matrix2image(matrix: BinaryMatrix, size: int = None, quiet_zone: int 
     img = Image.fromarray(matrix)
     if size is None:
         size = img.height * 10
-    img = img.resize((size, size), resample=Image.Resampling.NEAREST)
+    img = img.resize((size, size), resample=Image.Resampling.NEAREST)  # PIL 9.1.0から変更
     return img
 
 
@@ -92,7 +92,7 @@ def create_symbol_image(text: str, ecl: ECL = ECL.NONE, size: int = None) -> Ima
     :param text: テキスト
     :param ecl: 誤り訂正レベル
     :param size: 画像の一辺の長さ
-    :return:
+    :return: マイクロQRコードの画像
     """
     matrix = create_symbol_matrix(text, ecl)
     return symbol_matrix2image(matrix, size, 2)

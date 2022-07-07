@@ -19,9 +19,9 @@ aaaa11111AAAAみたいなパターンにおいて、2つに切ってそれぞれ
 import itertools
 import unittest
 
-from micro_qr import Version
-from micro_qr.optimization.algorithm.opt_brute_force import optimize_brute_force
-from micro_qr.optimization.algorithm.opt_hill_climbing import optimize_hill_climbing
+from mkmqr import Version
+from mkmqr.optimization.algorithm.opt_brute_force import optimize_brute_force
+from mkmqr.optimization.algorithm.opt_hill_climbing import optimize_hill_climbing
 
 
 class TestOptimization(unittest.TestCase):

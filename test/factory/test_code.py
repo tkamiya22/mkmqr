@@ -1,8 +1,8 @@
 import unittest
 
-from micro_qr.model import Version, Mode, ErrorCorrectionLevel, Mask, values
-from micro_qr.binary import bin2arr, concat_arr, bin2mat, merge_matrix
-from micro_qr.matrix import *
+from mkmqr.model import Version, Mode, ErrorCorrectionLevel, Mask, values
+from mkmqr.binary import bin2arr, concat_arr, bin2mat, merge_matrix
+from mkmqr.matrix import *
 
 
 class TestCodewordMatrix(unittest.TestCase):

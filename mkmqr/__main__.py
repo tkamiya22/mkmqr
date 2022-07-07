@@ -7,14 +7,14 @@ import sys
 from logging import getLogger, StreamHandler, Formatter, DEBUG, INFO
 from typing import Optional
 
-import micro_qr
+import mkmqr
 from .factory import create_symbol_image
 from .model import ErrorCorrectionLevel as ECL, InvalidPairError, InvalidCharacterError, OverCapacityError, set_encoding
 
 handler = StreamHandler()
 # handler.setFormatter(Formatter('[{levelname:>8}] {filename:20} L{lineno:3}, {funcName:25} : {message}', style='{'))
 handler.setFormatter(Formatter('%(message)s'))
-logger = getLogger(micro_qr.__name__)
+logger = getLogger(mkmqr.__name__)
 logger.addHandler(handler)
 
 

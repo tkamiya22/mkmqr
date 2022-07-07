@@ -7,7 +7,7 @@
 import unittest
 from itertools import product
 
-from micro_qr import create_symbol_image, ErrorCorrectionLevel as ECL, OverCapacityError
+from mkmqr import create_symbol_image, ErrorCorrectionLevel as ECL, OverCapacityError
 
 
 class TestImage(unittest.TestCase):

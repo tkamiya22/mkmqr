@@ -1,5 +1,5 @@
 import unittest
-from micro_qr.error_correction import PolynomialRing, ReedSolomonCode
+from mkmqr.error_correction import PolynomialRing, ReedSolomonCode
 
 
 class TestReedSolomonCode(unittest.TestCase):

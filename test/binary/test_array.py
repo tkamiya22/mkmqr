@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from micro_qr.binary import *
+from mkmqr.binary import *
 
 
 t = True

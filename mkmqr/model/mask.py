@@ -1,6 +1,6 @@
 from enum import Enum
 from typing import Callable
-from micro_qr.binary import bin2arr, BinaryArray
+from mkmqr.binary import bin2arr, BinaryArray
 
 
 class Mask(Enum):
