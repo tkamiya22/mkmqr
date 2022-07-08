@@ -6,6 +6,8 @@
 `JIS X0510 <https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=X0510>`_
 """
 
+from .__version import __version__
+
 from .binary import (
     BinaryArray,
     BinaryMatrix,

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# console_scriptsが標準化されていない？ためsetup.cfgを用いて定義する
+
+#[build-system]
+#requires = [
+#  "setuptools>=61.0",
+#  "numpy>=1.23.0",
+#  "Pillow>=9.2.0",
+#]
+#build-backend = "setuptools.build_meta"
+#
+#[project]
+#name = "mkmqr"
+##version = "0.6.0"
+#description = "Package to create micro QR code."
+#readme = "docs/README.md"
+#requires-python = ">=3.8"
+#license = { text = "MIT License", file = "LICENSE" }
+#authors = [
+#  { name="Toshiki Kamiya", email="tkamiya22@gmail.com" },
+#]
+#requires-python = ">=3.8"
+#classifiers = [
+#    "Programming Language :: Python :: 3",
+#    "License :: OSI Approved :: MIT License",
+#    "Operating System :: OS Independent",
+#]
+#dynamic = ["version"]
+#
+#[project.urls]
+#"Homepage" = "https://github.com/tkamiya22/mkmqr"
+#"Bug Tracker" = "https://github.com/tkamiya22/mkmqr/issues"
+#
+#[tool.setuptools.packages.dynamic]
+#version = {attr = "mkmqr.__version.__version__"}
