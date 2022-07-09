@@ -67,7 +67,7 @@ def analyze_text(
     """注目する誤り訂正レベル"""
 
     if _version in versions and _ecl in ecls:
-        if values.check_combination(version=version, ecl=ecl, mode=modes):
+        if values.check_combination(version=_version, ecl=_ecl, mode=modes):
             seg_len = text2mixing_segment_length(_version, text)
             capacity = values.get_data_bit_capacity(_version, _ecl)
             if seg_len <= capacity:
