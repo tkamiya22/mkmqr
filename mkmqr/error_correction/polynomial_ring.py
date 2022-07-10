@@ -58,6 +58,9 @@ class PolynomialRing:
         left_cof = self._coefficient
         right_cof = other._coefficient
 
+        if right_cof == 0:
+            raise ZeroDivisionError()
+
         def bin_digit_num(n):
             """二進数の桁数を数える"""
             m = 0
